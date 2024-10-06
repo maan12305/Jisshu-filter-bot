@@ -1548,7 +1548,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
             **locals()
         )
     else:
-        cap = f"<b>✪ {search} 𝙐𝙥𝙡𝙤𝙖𝙙𝙚𝙙 𝘽𝙮 ☟</b><b>\n@maam_movies_backup</b>\n<b>⚜"
+        cap = f"<b>✪ {search} 𝙐𝙥𝙡𝙤𝙖𝙙𝙚𝙙 𝘽𝙮 ☟</b><b>\n@maam_movies_backup</b>\n<b>⚜ 𝙁𝙤𝙪𝙣𝙙𝙚𝙙 𝙍𝙚𝙨𝙪𝙡𝙩𝙨 𝙁𝙤𝙧 𝙔𝙤𝙪𝙧 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 ❤️‍🔥</b>"
 
     ads, ads_name, _ = await mdb.get_advirtisment()
     ads_text = ""
