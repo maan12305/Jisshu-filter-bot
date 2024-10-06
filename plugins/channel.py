@@ -79,7 +79,7 @@ async def send_movie_updates(bot, file_name, caption, file_id):
         caption_message = f"#New_File_Added ✅\n\nFile_Name:- <code>{movie_name}</code>\n\nLanguage:- {language}\n\nQuality:- {quality}"    
         movie_update_channel = await db.movies_update_channel_id()    
         btn = [
-            [InlineKeyboardButton('Get File', url=f'https://t.me/{temp.U_NAME}?start=pm_mode_file_{ADMINS[0]}_{file_id}')]
+            [InlineKeyboardButton('Get File', url=f'https://t.me/{temp.U_NAME}?start=getfile_{ADMINS[0]}_{file_id}')]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         if poster_url:
