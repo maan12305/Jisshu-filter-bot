@@ -115,7 +115,7 @@ User - {}"""
 ⭐ Rating: {rating} / 10</b>
 """
 
-    FILE_CAPTION = """**⍟ File Name🔻</b>\n\n{file_name}</a></b>\n\n<b>**⍟  File Size\n\n  🔻[ {file_size} ]</a></b>**"""
+    FILE_CAPTION = """**⍟ File Name🔻**</b>\n\n`{file_name}`</a></b>\n\n<b>**⍟  File Size\n\n  🔻[ {file_size} ]</a></b>**"""
     
 
     ALRT_TXT = """ᴊᴀʟᴅɪ ʏᴇʜᴀ sᴇ ʜᴀᴛᴏ !"""
