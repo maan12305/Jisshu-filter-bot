@@ -354,8 +354,10 @@ async def start(client:Client, message):
                 file_caption=file.caption
             )
             btn = [[
-                InlineKeyboardButton("⚡ 𝙁𝙖𝙨𝙩 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 / 𝙒𝙖𝙩𝙘𝙝 𝙊𝙣𝙡𝙞𝙣𝙚 ⚡", callback_data=f'stream#{file.file_id}')
-            ]]
+                InlineKeyboardButton("⚡ Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ ⚡", callback_data=f'stream#{file.file_id}')
+            ],[
+                InlineKeyboardButton('Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇ', url='https://t.me/movie_update_channel0')
+         	]]
             toDel = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file.file_id,
@@ -394,8 +396,10 @@ async def start(client:Client, message):
         file_caption=files.caption
     )
     btn = [[
-        InlineKeyboardButton("⚡ 𝙁𝙖𝙨𝙩 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 / 𝙒𝙖𝙩𝙘𝙝 𝙊𝙣𝙡𝙞𝙣𝙚 ⚡", callback_data=f'stream#{file_id}')
-    ]]
+        InlineKeyboardButton("⚡ Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ ⚡", callback_data=f'stream#{file.file_id}')
+    ],[
+        InlineKeyboardButton('Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇ', url='https://t.me/movie_update_channel0')
+ 	]]
     toDel=await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
