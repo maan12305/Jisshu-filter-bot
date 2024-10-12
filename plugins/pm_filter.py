@@ -988,13 +988,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [[
 			InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer')
-		],[
-			InlineKeyboardButton('Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='Source')
+		        InlineKeyboardButton('Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='Source')
                 ],[
                         InlineKeyboardButton('My Developers 😎',callback_data='mydevelopers')
-		],[
-			InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='start')]]
-                ),
+	                InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='start')]]
+	        ]]
             disable_web_page_preview = True
 	)
     elif query.data == "mydevelopers":
