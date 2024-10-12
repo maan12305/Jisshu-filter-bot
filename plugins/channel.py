@@ -79,7 +79,7 @@ async def send_movie_updates(bot, file_name, caption, file_id):
         caption_message = f"<code> {movie_name} ✅</code>**\n\nLanguage:- {language}**\n**Quality:- {quality}**\n<code>**Year:- {year}**"    
         movie_update_channel = await db.movies_update_channel_id()    
         btn = [
-            [InlineKeyboardButton('Get File 🗃️', url=f'http://telegram.dog/maan_file_store_BOT?start=getfile_{movie_name}')]
+            [InlineKeyboardButton('Get File 🗃️', url=f'https://telegram.me/{temp.U_NAME}?start=getfile-{movie_name}')
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         if poster_url:
