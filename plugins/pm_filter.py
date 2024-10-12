@@ -987,11 +987,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             script.ABOUT_TEXT.format(query.from_user.mention(),temp.B_LINK),
             reply_markup = InlineKeyboardMarkup(
                 [[
-			InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer')
+			InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer')‚
 		        InlineKeyboardButton('Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='Source')
                 ],[
-                        InlineKeyboardButton('My Developers 😎',callback_data='mydevelopers')
-	                InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='start')]]
+                        InlineKeyboardButton('My Developers 😎',callback_data='mydevelopers')‚
+	                InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='start')
 	        ]]
             disable_web_page_preview = True
 	)
