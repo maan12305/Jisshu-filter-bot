@@ -64,7 +64,7 @@ async def send_movie_updates(bot, file_name, caption, file_id):
         qualities = ["ORG", "org", "hdcam", "HDCAM", "HQ", "hq", "HDRip", "hdrip", 
                      "camrip", "WEB-DL" "CAMRip", "hdtc", "predvd", "DVDscr", "dvdscr", 
                      "dvdrip", "dvdscr", "HDTC", "dvdscreen", "HDTS", "hdts"]
-        quality = await check_qualities(caption.lower(), qualities) or "HDRip"
+        quality = await check_qualities(caption, qualities) or "HDRip"
         language = ""
         nb_languages = ["Hindi", "Bengali", "English", "Marathi", "Tamil", "Telugu", "Malayalam", "Kannada", "Punjabi", "Gujrati", "Korean", "Japanese", "Bhojpuri", "Dual", "Multi"]    
         for lang in nb_languages:
@@ -76,11 +76,14 @@ async def send_movie_updates(bot, file_name, caption, file_id):
             return 
         processed_movies.add(movie_name)    
         poster_url = await get_imdb(movie_name)
-        caption_message = f"<code> {movie_name} ✅</code>**\n\nLanguage:- {language}**\n**Quality:- {quality}**\n<code>**Year:- {year}**"    
+        caption_message = f"#New_File_Added ✅\n\nFile_Name:- <code>{movie_name}</code>\n\nLanguage:- {language}\n\nQuality:- {quality}" 
+        search_movie = movie_name.replace(" ", '-')
         movie_update_channel = await db.movies_update_channel_id()    
-        btn = [
-             InlineKeyboardButton('Get File 🗃️', url = f'https://t.me/{temp.U_NAME}?start=getfile-{movie_name}')
-        ]
+        btn = [[
+            InlineKeyboardButton('📂 ɢᴇᴛ ғɪʟᴇ 📂', url=f'https://telegram.me/{temp.U_NAME}?start=getfile-{search_movie}')
+        ],[
+            InlineKeyboardButton('♻️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ♻️', url=f'https://t.me/howtoopin')
+        ]]
         reply_markup = InlineKeyboardMarkup(btn)
         if poster_url:
             await bot.send_photo(movie_update_channel if movie_update_channel else MOVIE_UPDATE_CHANNEL, 
