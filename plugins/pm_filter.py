@@ -44,7 +44,7 @@ async def pm_search(client, message):
             return await auto_filter(client, message)
         await auto_filter(client, message)
     else:
-        await message.reply_text("<b><i>𝖸𝗈𝗎 𝖢𝖺𝗇'𝗍 𝖦𝖾𝗍 𝖬𝗈𝗏𝗂𝖾𝗌 𝖥𝗋𝗈𝗆. 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖨𝗇 𝖮𝗎𝗋 𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉. ᴄʟɪᴄᴋ 𝖮𝗇 𝖡𝖾𝗅𝗈𝗐 𝖡𝗎𝗍𝗍𝗈𝗇 👇.</i></b>",
+        await message.reply_text("Yᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇꜱ Fʀᴏᴍ Rᴇǫᴜᴇꜱᴛ Iɴ Oᴜʀ Mᴏᴠɪᴇ Gʀᴏᴜᴘ. ᴄʟɪᴄᴋ Oɴ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴ 👇",
                                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url=f'http://telegram.dog/maam_movies_backup')]]))
         
     
