@@ -987,23 +987,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             script.ABOUT_TEXT.format(query.from_user.mention(),temp.B_LINK),
             reply_markup = InlineKeyboardMarkup(
                 [[
-			InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer'),
-		        InlineKeyboardButton('Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='Source')
+			InlineKeyboardButton('‼️ Dɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='disclaimer'),
+		        InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ ✧', callback_data='Source')
                 ],[
-                        InlineKeyboardButton('My Developers 😎',callback_data='mydevelopers'),
-			InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='start')]]
+                        InlineKeyboardButton('Mʏ Dᴇᴠᴇʟᴏᴘᴇʀ ✪',callback_data='mydevelopers'),
+			InlineKeyboardButton('⋞ Hᴏᴍᴇ', callback_data='start')]]
                 ),
             disable_web_page_preview = True
 	)
     elif query.data == "mydevelopers":
-        await query.answer("Meet the minds behind this bot:\n\n👨‍💻 @Im_professor_22👨‍💻 @Im_professor_22\n👨‍💻 @Im_professor_22\n👨‍💻 @Im_professor_22\n\n\n❤️ A big thank you for making this bot awesome!", show_alert=True)
+        await query.answer("𝖳𝗁𝗂𝗌 𝖡𝗈𝗍 𝖨𝗌 𝖢𝗋𝖾𝖺𝗍𝖾𝖽 𝖡𝗒 𝖳𝗁𝗂𝗌 𝖬𝖺𝗇 ☟\n\n👨‍💻  𝖯𝖱𝖮𝖥𝖤𝖲𝖲𝖮𝖱", show_alert=True)
  
     elif query.data == "Source":
         buttons = [[
-            InlineKeyboardButton('Repo', url='https://t.me/Im_professor_22')
+            InlineKeyboardButton('Rᴇᴘᴏ ✧', url='https://t.me/Im_professor_22')
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='about'),
-            InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
+            InlineKeyboardButton('⋞ Bᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('Cʟᴏꜱᴇ ⨯', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1014,9 +1014,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	
     elif query.data == "disclaimer":
             btn = [[
-                    InlineKeyboardButton("📲 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴏᴡɴᴇʀ ", user_id = ADMINS[0])
+                    InlineKeyboardButton("📲 Cᴏɴᴛᴀᴄᴛ Tᴏ Oᴡɴᴇʀ ", user_id = ADMINS[0])
                ],[
-                    InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="about")
+                    InlineKeyboardButton("⋞ Bᴀᴄᴋ", callback_data="about")
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
