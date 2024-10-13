@@ -356,7 +356,7 @@ async def start(client:Client, message):
             btn = [[
                 InlineKeyboardButton("⚡ Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ ⚡", callback_data=f'stream#{file.file_id}')
             ],[ 
-                InlineKeyboardButton("Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇꜱ 📰", url=f'https://t.me/movie_update_channel0'),
+                InlineKeyboardButton("Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇ ✪", url=f'https://t.me/movie_update_channel0'),
                 InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ ✧", url=f'https://t.me/Im_professor_22')
             ]]
             toDel = await client.send_cached_media(
@@ -399,7 +399,7 @@ async def start(client:Client, message):
     btn = [[
         InlineKeyboardButton("⚡ Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ ⚡", callback_data=f'stream#{file_id}')
     ],[
-        InlineKeyboardButton(" Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇꜱ 📰", url=f'https://t.me/movie_update_channel0'),
+        InlineKeyboardButton(" Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇ ✪", url=f'https://t.me/movie_update_channel0'),
         InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ ✧", url=f'https://t.me/Im_professor_22')
     ]]
     toDel=await client.send_cached_media(
