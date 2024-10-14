@@ -188,7 +188,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
                             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⚡', url='https://t.me/maam_movies_backup'),
-                            InlineKeyboardButton('✆ Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ✆', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
+                            InlineKeyboardButton('Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ✆', url="https://www.instagram.com/__maan_happy__")
                         ],[
                             InlineKeyboardButton('💳 Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
                         ],[
@@ -218,7 +218,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
                             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⚡', url='https://t.me/maam_movies_backup'),
-                            InlineKeyboardButton('✆ Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ✆', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
+                            InlineKeyboardButton('Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ✆', url="https://www.instagram.com/__maan_happy__")
                         ],[
                             InlineKeyboardButton('💳 Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
                         ],[
@@ -281,7 +281,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
                             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⚡', url='https://t.me/maam_movies_backup'),
-                            InlineKeyboardButton('✆ Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ✆', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
+                            InlineKeyboardButton('Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ✆', url="https://www.instagram.com/__maan_happy__")
                         ],[
                             InlineKeyboardButton('💳 Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
                         ],[
