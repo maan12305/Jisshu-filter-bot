@@ -816,11 +816,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                 ],[
-                InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⚡', url='https://t.me/maam_movies_backup'),
+                InlineKeyboardButton('Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ⚜️', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
                 ],[
-                InlineKeyboardButton('Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇ 📰', url="https://t.me/movie_update_channel0"),
-                InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⚡', url="https://t.me/maam_movies_backup")
+                InlineKeyboardButton('Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
+                ],[
+                InlineKeyboardButton('Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ✵', url="https://t.me/movie_update_channel0")
                 ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
