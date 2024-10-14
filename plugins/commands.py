@@ -188,11 +188,11 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
                             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⚡', url='https://t.me/maam_movies_backup'),
-                            InlineKeyboardButton('Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ⚜️', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
+                            InlineKeyboardButton('✆ Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ✆', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
                         ],[
-                            InlineKeyboardButton('Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
+                            InlineKeyboardButton('💳 Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ✵', url="https://t.me/movie_update_channel0")
+                            InlineKeyboardButton('✵ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ✵', url="https://t.me/movie_update_channel0")
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
                         m=await message.reply_sticker("CAACAgQAAxUAAWcMmCopsZU5QCTv38Plv7ST_-dkAAK5FgACx-tYUA6rJwhT6ONGNgQ") 
@@ -218,11 +218,11 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
                             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⚡', url='https://t.me/maam_movies_backup'),
-                            InlineKeyboardButton('Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ⚜️', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
+                            InlineKeyboardButton('✆ Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ✆', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
                         ],[
-                            InlineKeyboardButton('Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
+                            InlineKeyboardButton('💳 Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ✵', url="https://t.me/movie_update_channel0")
+                            InlineKeyboardButton('✵ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ✵', url="https://t.me/movie_update_channel0")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgQAAxUAAWcMmCopsZU5QCTv38Plv7ST_-dkAAK5FgACx-tYUA6rJwhT6ONGNgQ") 
@@ -281,11 +281,11 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
                             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⚡', url='https://t.me/maam_movies_backup'),
-                            InlineKeyboardButton('Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ⚜️', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
+                            InlineKeyboardButton('✆ Fᴏʟʟᴏᴡ Iɴꜱᴛᴀ ✆', url="https://instagram.com/ansh_vachhani_?igshid=YmMyMTA2M2Y=")
                         ],[
-                            InlineKeyboardButton('Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
+                            InlineKeyboardButton('💳 Gᴇᴛ Pʀᴇᴍɪᴜᴍ Fᴏʀ Fʀᴇᴇ 💳', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ✵', url="https://t.me/movie_update_channel0")
+                            InlineKeyboardButton('✵ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ✵', url="https://t.me/movie_update_channel0")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
