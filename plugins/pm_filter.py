@@ -1483,7 +1483,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
            # ])
            # btn.insert(1,[
            #     InlineKeyboardButton("🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", user_id=ADMINS[0])
-            ])
+           # ])
    # else:
      #   btn.insert(0,[
        #     InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
