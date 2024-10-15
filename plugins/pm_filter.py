@@ -323,7 +323,7 @@ async def season_search(client: Client, query: CallbackQuery):
               ]
    
     btn.insert(0,[
-	 InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans)
+	 InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
          ])
    # btn.insert(1, [
     #    InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -430,7 +430,7 @@ async def year_search(client: Client, query: CallbackQuery):
         
    
     btn.insert(0,[
-	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans)
+	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
         ])
     #btn.insert(1, [
       #  InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -536,7 +536,7 @@ async def quality_search(client: Client, query: CallbackQuery):
         
  
     btn.insert(0,[
-	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans)
+	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
         ])
    # btn.insert(1, [
       #  InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -647,7 +647,7 @@ async def lang_search(client: Client, query: CallbackQuery):
         
 
     btn.insert(0,[
-	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans)
+	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
         ])
    # btn.insert(1, [
     #    InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
