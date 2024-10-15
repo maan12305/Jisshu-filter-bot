@@ -1,6 +1,8 @@
 from info import *
 
-    if AUTO_APPROVE_MODE == True:
+    
+if AUTO_APPROVE_MODE == True:
+    print("Auto-approval mode is on!")
         if not await db.is_user_exist(message.from_user.id):
             await db.add_user(message.from_user.id, message.from_user.first_name)
         if message.chat.id == AUTH_CHANNEL:
