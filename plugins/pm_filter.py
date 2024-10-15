@@ -1466,8 +1466,8 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         btn = [[InlineKeyboardButton(text=f"🔗 {get_size(file.file_size)}≽ {formate_file_name(file.file_name)}", url=f'https://telegram.dog/{temp.U_NAME}?start=file_{message.chat.id}_{file.file_id}'),]
                for file in files
               ]
-    if offset != "":
-        if total_results >= MAX_BTN:
+    #if offset != "":
+      #  if total_results >= MAX_BTN:
            # btn.insert(0,[
            #     InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
            # ])
@@ -1491,9 +1491,9 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
 
      #   btn.insert(1,[
       #      InlineKeyboardButton("🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", user_id=ADMINS[0])
-      #  ])
+      #  ]]
                              
-    #if spoll:
+    if spoll:
         m = await msg.message.edit(f"<b><code>{search}</code> ɪs ꜰᴏᴜɴᴅ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ꜰᴏʀ ꜰɪʟᴇs 📫</b>")
         await asyncio.sleep(1.2)
         await m.delete()
