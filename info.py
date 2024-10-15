@@ -94,6 +94,7 @@ LONG_IMDB_DESCRIPTION = is_enabled('LONG_IMDB_DESCRIPTION', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 SPELL_CHECK = is_enabled('SPELL_CHECK', True)
 LINK_MODE = is_enabled('LINK_MODE', False)
+AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', True))
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
