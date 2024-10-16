@@ -190,7 +190,7 @@ async def next_page(bot, query):
                 for file in files
               ]
     btn.insert(0,[
-         InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
+         InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
          ])
    # btn.insert(1, [
    #     InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -323,7 +323,7 @@ async def season_search(client: Client, query: CallbackQuery):
               ]
    
     btn.insert(0,[
-	 InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
+	 InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
          ])
    # btn.insert(1, [
     #    InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -430,7 +430,7 @@ async def year_search(client: Client, query: CallbackQuery):
         
    
     btn.insert(0,[
-	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
+	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
         ])
     #btn.insert(1, [
       #  InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -536,7 +536,7 @@ async def quality_search(client: Client, query: CallbackQuery):
         
  
     btn.insert(0,[
-	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
+	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
         ])
    # btn.insert(1, [
       #  InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -647,7 +647,7 @@ async def lang_search(client: Client, query: CallbackQuery):
         
 
     btn.insert(0,[
-	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
+	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
         ])
    # btn.insert(1, [
     #    InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -1467,7 +1467,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                for file in files
               ]
       #if offset != "" :
-       #  if total_results >= MAX_BTN:
+        # if total_results >= MAX_BTN:
            #  btn.insert(0,[
              #    InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
             # ])
