@@ -1467,7 +1467,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                for file in files
               ]
       #if offset != "" :
-         if total_results >= MAX_BTN:
+       #  if total_results >= MAX_BTN:
              btn.insert(0,[
                  InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
              ])
