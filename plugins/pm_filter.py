@@ -190,7 +190,7 @@ async def next_page(bot, query):
                 for file in files
               ]
     btn.insert(0,[
-         InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
+         InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
          ])
    # btn.insert(1, [
    #     InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -323,7 +323,7 @@ async def season_search(client: Client, query: CallbackQuery):
               ]
    
     btn.insert(0,[
-	 InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
+	 InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
          ])
    # btn.insert(1, [
     #    InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -430,7 +430,7 @@ async def year_search(client: Client, query: CallbackQuery):
         
    
     btn.insert(0,[
-	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
+	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
         ])
     #btn.insert(1, [
       #  InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -536,7 +536,7 @@ async def quality_search(client: Client, query: CallbackQuery):
         
  
     btn.insert(0,[
-	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
+	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
         ])
    # btn.insert(1, [
       #  InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -647,7 +647,7 @@ async def lang_search(client: Client, query: CallbackQuery):
         
 
     btn.insert(0,[
-	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", url='https://t.me/premium_plansa')
+	InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
         ])
    # btn.insert(1, [
     #    InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
@@ -1466,28 +1466,28 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         btn = [[InlineKeyboardButton(text=f"🔗 {get_size(file.file_size)}≽ {formate_file_name(file.file_name)}", url=f'https://telegram.dog/{temp.U_NAME}?start=file_{message.chat.id}_{file.file_id}'),]
                for file in files
               ]
-      #if offset != "" :
-        # if total_results >= MAX_BTN:
-           #  btn.insert(0,[
-             #    InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
-            # ])
+      if offset != "": 
+         if total_results >= MAX_BTN:
+             btn.insert(0,[
+                 InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
+             ])
           #  btn.insert(1, [
            #     InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
             #    InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
             #    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
            # ])            
-       #  else:
-           #  btn.insert(0,[
-            #     InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
+         else:
+             btn.insert(0,[
+                 InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
            #     InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}")
-           #  ])
+             ])
            #  btn.insert(1,[
              #    InlineKeyboardButton("🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", user_id=ADMINS[0])
            #  ])
-     #else:
-        # btn.insert(0,[
-          #   InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
-          #   ]]
+     else:
+         btn.insert(0,[
+             InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
+             ]]
 
         # btn.insert(1,[
            #  InlineKeyboardButton("🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", user_id=ADMINS[0])
