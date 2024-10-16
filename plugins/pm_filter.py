@@ -1466,7 +1466,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         btn = [[InlineKeyboardButton(text=f"🔗 {get_size(file.file_size)}≽ {formate_file_name(file.file_name)}", url=f'https://telegram.dog/{temp.U_NAME}?start=file_{message.chat.id}_{file.file_id}'),]
                for file in files
               ]
-     if offset != "":
+     #if offset != "":
          if total_results >= MAX_BTN:
              btn.insert(0,[
                  InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')
