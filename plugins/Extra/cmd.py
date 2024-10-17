@@ -11,7 +11,7 @@ from datetime import timedelta, date, datetime
 from utils import temp
 from info import DATABASE_URI, DATABASE_NAME, ADMINS
 
-logger = logging.getLogger(name)
+logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
 client = AsyncIOMotorClient(DATABASE_URI)
