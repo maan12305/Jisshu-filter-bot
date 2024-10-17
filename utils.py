@@ -221,6 +221,7 @@ async def get_shortlink(link, grp_id, is_second_shortener=False, is_third_shorte
         except Exception as e:
             link = await shortzy.get_quick_link(link)
     return link
+ await ansh.total_verified()
 
 def get_file_id(message: "Message") -> Any:
     media_types = (
