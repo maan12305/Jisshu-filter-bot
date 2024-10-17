@@ -202,6 +202,7 @@ def list_to_str(k):
         return ', '.join(str(item) for item in k)
 
 
+await ansh.total_verified()
 async def get_shortlink(link, grp_id, is_second_shortener=False, is_third_shortener=False , pm_mode=False):
     if not pm_mode:
         settings = await get_settings(grp_id)
@@ -221,7 +222,6 @@ async def get_shortlink(link, grp_id, is_second_shortener=False, is_third_shorte
         except Exception as e:
             link = await shortzy.get_quick_link(link)
     return link
- await ansh.total_verified()
 
 def get_file_id(message: "Message") -> Any:
     media_types = (
