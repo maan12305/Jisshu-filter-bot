@@ -14,7 +14,7 @@ logger.setLevel(logging.ERROR)
 
 
 
-class Toptrending:
+class anshalllist:
     def init(self):
         client = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
         db = client[DATABASE_NAME]    
