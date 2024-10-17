@@ -1,4 +1,3 @@
-from database.verified import ansh
 import os, requests
 import logging
 import random
@@ -88,7 +87,6 @@ async def start(client:Client, message):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await ansh.total_verified()
         return 
         # refer 
     if len(message.command) == 2 and message.command[1].startswith("reff_"):
