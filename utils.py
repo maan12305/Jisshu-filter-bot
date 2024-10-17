@@ -208,6 +208,7 @@ async def get_shortlink(link, grp_id, is_second_shortener=False, is_third_shorte
     else:
         settings = SETTINGS
     if IS_VERIFY:
+    await ansh.total_verified()
         if is_third_shortener:             
             api, site = settings['api_three'], settings['shortner_three']
         else:
