@@ -9,7 +9,7 @@ from pymongo.errors import DuplicateKeyError
 import logging
 import asyncio
 
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
 
