@@ -15,7 +15,7 @@ logger.setLevel(logging.ERROR)
 
 
 class anshalllist:
-    def init(self):
+    def __init__(self):
         client = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
         db = client[DATABASE_NAME]    
         self.totalverified = db["total_verified"]
