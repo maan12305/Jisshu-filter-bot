@@ -225,10 +225,10 @@ class Database:
         return await self.verify_id.insert_one(res)
 
     async def get_verify_id_info(self, user_id: int, hash):
-        await ansh.total_verified()
         return await self.verify_id.find_one({"user_id": user_id, "hash": hash})
 
     async def update_verify_id_info(self, user_id, hash, value: dict):
+        await ansh.total_verified()
         myquery = {"user_id": user_id, "hash": hash}
         newvalues = { "$set": value }
         return await self.verify_id.update_one(myquery, newvalues)
