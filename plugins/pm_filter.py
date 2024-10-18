@@ -1474,7 +1474,7 @@ if offset != "":
 else:
     btn.insert(0, [InlineKeyboardButton("🚩 Dɪʀᴇᴄᴛ Fɪʟᴇꜱ ? Nᴏ Vᴇʀɪғʏ", callback_data='seeplans')])
     btn.insert(1, [InlineKeyboardButton("🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", user_id=ADMINS[0])
-       ]]   
+       ])   
                              
     if spoll:
         m = await msg.message.edit(f"<b><code>{search}</code> ɪs ꜰᴏᴜɴᴅ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ꜰᴏʀ ꜰɪʟᴇs 📫</b>")
