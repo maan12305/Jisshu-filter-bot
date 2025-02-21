@@ -82,7 +82,7 @@ async def Jisshu_start():
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
     await JisshuBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(me.mention, today, time))
-    await JisshuBot.send_message(chat_id=SUPPORT_GROUP, text=f"<b>{me.mention} ʀᴇsᴛᴀʀᴛᴇᴅ 🤖</b>")
+    await JisshuBot.send_message(chat_id=SUPPORT_GROUP, text=f"<b>{mention} ʀᴇsᴛᴀʀᴛᴇᴅ 🤖</b>")
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
