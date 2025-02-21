@@ -26,7 +26,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
+DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobott")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -47,12 +47,12 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/howtoopin")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/howtoopin")
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/howtoopin")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "fce81b379d2558448d16b9d483e1d406c80078a6")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'arlinks.in')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "fce81b379d2558448d16b9d483e1d406c80078a6")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'arlinks.in')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "fce81b379d2558448d16b9d483e1d406c80078a6")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'arlinks.in')
+SHORTENER_API = environ.get("SHORTENER_API", "0b7e5705bdfbc9be5ee531acb06546edc59911c8")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'instantlinks.co')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "0b7e5705bdfbc9be5ee531acb06546edc59911c8")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'instantlinks.co')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "0b7e5705bdfbc9be5ee531acb06546edc59911c8")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'instantlinks.co')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
